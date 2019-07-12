@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">InternationalSchooling</string>
+    <string name="login">LOGIN</string>
+    <string name="NextClick">NextClick</string>
+    <string name="register">Register</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="emailid">EMAIL-ID</string>
+    <string name="Confirmid">CONFIRM-ID</string>
+    <string name="pass">CONFIRM-PASSWORD</string>
+    <string name="title_activity_home_navigation">HomeNavigation</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">NAME</string>
+    <string name="nav_header_subtitle">rhtshrm658@gmail.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+
+    <string-array name="gender">
+        <item>MALE</item>
+        <item>FEMALE</item>
+        <item>OTHERS</item>
+        <item>DO NOT WANT TO SPECIFY</item>
+    </string-array>
+
+    <string-array name="Gender1">
+        <item>YES</item>
+        <item>NO</item>
+    </string-array>
+
+<string-array name="RelationSpinner">
+    <item>Mother</item>
+    <item>Father</item>
+    <item>Guardian</item>
+    <item>Other</item>
+</string-array>
+
+
+    <string name="recaptcha_sitekey">6LcDWKwUAAAAAF28Wi6yaA06Lg71bdbYqs-_kn1B</string>
+
+  </resources>

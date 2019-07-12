@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#0E0D0D</color>
+    <color name="colorBlue">#303F9F</color>
+    <color name="colorAccenta">#F4FCF8</color>
+    <color name="colorpurple">#BD00C8</color>
+    <color name="colorbox">#00E4EE</color>
+    <color name="checkbox">#0EABAF</color>
+    <color name="colorwhite">#FFFFFF</color>
+    <color name="colorgreen">#23C55F</color>
+    <color name="colororange">#FF685D</color>
+    <color name="colorskyblue">#303F9F</color>
+</resources>

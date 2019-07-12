@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/splash"
+    tools:context=".Student.StudentRegistrationS2">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@color/colorskyblue" />
+
+    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profile_image"
+        android:layout_width="53dp"
+        android:layout_height="46dp"
+        android:layout_centerInParent="true"
+        android:src="@mipmap/white_bg"
+        app:civ_border_color="@color/colorAccent"
+        app:civ_border_width="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="39dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toEndOf="@+id/profile_image"
+        app:layout_constraintHorizontal_bias="0.253"
+        app:layout_constraintStart_toStartOf="@+id/profile_image"
+        app:layout_constraintTop_toTopOf="@+id/profile_image"
+        app:srcCompat="@drawable/iconlogo" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="262dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="2.Parent/Guardian Details"
+        android:textColor="@color/colorwhite"
+        android:textSize="21sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.653"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="48dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <Spinner
+        android:id="@+id/RelationSpinner"
+        style="@style/Widget.AppCompat.Spinner.Underlined"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.547"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="8dp"
+            android:text="Relation with student"
+            android:textColor="@color/colorBlue"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="@+id/RelationSpinner"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/imageView20"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/fname"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="18dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.549"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/RelationSpinner">
+
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="First Name" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/mname"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="18dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.549"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fname">
+
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Middle Name" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/lname"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="18dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.549"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mname">
+
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Last Name" />
+        </android.support.design.widget.TextInputLayout>
+
+        <Spinner
+            android:id="@+id/genderSpinner"
+            style="@style/Widget.AppCompat.Spinner.Underlined"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginEnd="18dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.552"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lname" />
+
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="8dp"
+            android:text="Gender"
+            android:textColor="@color/colorBlue"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="@+id/genderSpinner"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/imageView24"
+            app:layout_constraintTop_toBottomOf="@+id/lname" />
+
+
+        <Spinner
+            android:id="@+id/GenderSpinner1"
+            style="@style/Widget.AppCompat.Spinner.Underlined"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginEnd="18dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.552"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/genderSpinner" />
+
+        <ImageView
+            android:id="@+id/imageView18"
+            android:layout_width="32dp"
+            android:layout_height="38dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/GenderSpinner1"
+            app:layout_constraintEnd_toStartOf="@+id/GenderSpinner1"
+            app:layout_constraintTop_toTopOf="@+id/GenderSpinner1"
+            app:srcCompat="@drawable/ic_help_outline_black_24dp" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="8dp"
+            android:text="Responsible for the student"
+            android:textColor="@color/colorBlue"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@+id/GenderSpinner1"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/imageView18"
+            app:layout_constraintTop_toBottomOf="@+id/genderSpinner" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/email"
+            android:layout_width="0dp"
+            android:layout_height="51dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="18dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.549"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/checkBox">
+
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email" />
+        </android.support.design.widget.TextInputLayout>
+
+        <Spinner
+            android:id="@+id/IsdSpinner"
+            style="@style/Widget.AppCompat.Spinner.Underlined"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="18dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.552"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/email" />
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/PhoneNo"
+            android:layout_width="0dp"
+            android:layout_height="49dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="18dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.555"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/IsdSpinner">
+
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Phone No" />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <Spinner
+            android:id="@+id/IsdSpinner1"
+            style="@style/Widget.AppCompat.Spinner.Underlined"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="18dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.647"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/PhoneNo" />
+
+        <ImageView
+            android:id="@+id/imageView17"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/IsdSpinner1"
+            app:layout_constraintEnd_toStartOf="@+id/IsdSpinner1"
+            app:layout_constraintTop_toTopOf="@+id/IsdSpinner1"
+            app:srcCompat="@drawable/ic_settings_phone_black_24dp" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/alternatephoneno"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="18dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.649"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/IsdSpinner1">
+
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Alternate Phone No" />
+
+            <Button
+                android:id="@+id/button6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Button" />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <ImageView
+            android:id="@+id/imageView30"
+            android:layout_width="37dp"
+            android:layout_height="38dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/alternatephoneno"
+            app:layout_constraintEnd_toStartOf="@+id/alternatephoneno"
+            app:layout_constraintTop_toTopOf="@+id/alternatephoneno"
+            app:layout_constraintVertical_bias="1.0"
+            app:srcCompat="@drawable/ic_phone_black_24dp" />
+
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="28dp"
+            android:background="@color/colorBlue"
+            android:onClick="NextClick"
+            android:text="NEXT"
+            android:textColor="@color/colorwhite"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/Note"
+            app:layout_constraintHorizontal_bias="0.625"
+            app:layout_constraintStart_toStartOf="@+id/Note"
+            app:layout_constraintTop_toBottomOf="@+id/Note"
+            app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+         android:id="@+id/imageView19"
+         android:layout_width="64dp"
+         android:layout_height="45dp"
+         android:elevation="10dp"
+         app:layout_constraintBottom_toBottomOf="@+id/button5"
+         app:layout_constraintEnd_toEndOf="@+id/button5"
+         app:layout_constraintTop_toTopOf="@+id/button5"
+         app:layout_constraintVertical_bias="1.0"
+         app:srcCompat="@drawable/next_black_24dp" />
+
+    <ImageView
+         android:id="@+id/imageView20"
+         android:layout_width="32dp"
+         android:layout_height="38dp"
+         android:layout_marginEnd="8dp"
+         app:layout_constraintBottom_toBottomOf="@+id/RelationSpinner"
+         app:layout_constraintEnd_toStartOf="@+id/RelationSpinner"
+         app:layout_constraintTop_toTopOf="@+id/RelationSpinner"
+         app:srcCompat="@drawable/ic_relation_black_24dp" />
+
+    <ImageView
+         android:id="@+id/imageView21"
+         android:layout_width="33dp"
+         android:layout_height="45dp"
+         android:layout_marginEnd="8dp"
+         app:layout_constraintBottom_toBottomOf="@+id/fname"
+         app:layout_constraintEnd_toStartOf="@+id/fname"
+         app:layout_constraintTop_toTopOf="@+id/fname"
+         app:srcCompat="@drawable/ic_user" />
+
+    <ImageView
+         android:id="@+id/imageView22"
+         android:layout_width="34dp"
+         android:layout_height="41dp"
+         android:layout_marginEnd="8dp"
+         app:layout_constraintBottom_toBottomOf="@+id/mname"
+         app:layout_constraintEnd_toStartOf="@+id/mname"
+         app:layout_constraintTop_toTopOf="@+id/mname"
+         app:srcCompat="@drawable/ic_user" />
+
+    <ImageView
+         android:id="@+id/imageView23"
+         android:layout_width="33dp"
+         android:layout_height="49dp"
+         android:layout_marginEnd="8dp"
+         app:layout_constraintBottom_toBottomOf="@+id/lname"
+         app:layout_constraintEnd_toStartOf="@+id/lname"
+         app:layout_constraintTop_toTopOf="@+id/lname"
+         app:srcCompat="@drawable/ic_user" />
+
+    <ImageView
+         android:id="@+id/imageView24"
+         android:layout_width="32dp"
+         android:layout_height="38dp"
+         android:layout_marginEnd="8dp"
+         app:layout_constraintBottom_toBottomOf="@+id/genderSpinner"
+         app:layout_constraintEnd_toStartOf="@+id/genderSpinner"
+         app:layout_constraintTop_toTopOf="@+id/genderSpinner"
+         app:srcCompat="@drawable/ic_gender_black_24dp" />
+
+    <ImageView
+         android:id="@+id/imageView25"
+         android:layout_width="30dp"
+         android:layout_height="40dp"
+         android:layout_marginEnd="8dp"
+         app:layout_constraintBottom_toBottomOf="@+id/email"
+         app:layout_constraintEnd_toStartOf="@+id/email"
+         app:layout_constraintTop_toTopOf="@+id/email"
+         app:layout_constraintVertical_bias="0.466"
+         app:srcCompat="@drawable/ic_email_black_24dp" />
+
+    <ImageView
+         android:id="@+id/imageView26"
+         android:layout_width="28dp"
+         android:layout_height="35dp"
+         android:layout_marginEnd="8dp"
+         app:layout_constraintBottom_toBottomOf="@+id/IsdSpinner"
+         app:layout_constraintEnd_toStartOf="@+id/IsdSpinner"
+         app:layout_constraintTop_toTopOf="@+id/IsdSpinner"
+         app:srcCompat="@drawable/ic_settings_phone_black_24dp" />
+
+     <ImageView
+          android:id="@+id/imageView27"
+          android:layout_width="28dp"
+          android:layout_height="35dp"
+          android:layout_marginEnd="8dp"
+          app:layout_constraintBottom_toBottomOf="@+id/PhoneNo"
+          app:layout_constraintEnd_toStartOf="@+id/PhoneNo"
+          app:layout_constraintTop_toTopOf="@+id/PhoneNo"
+          app:layout_constraintVertical_bias="0.0"
+          app:srcCompat="@drawable/ic_phone_black_24dp" />
+
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="351dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:buttonTint="@color/colorgreen"
+            android:text="I don't want to create a separate user for my Parent/Guardian. "
+            android:textSize="16dp"
+            app:layout_constraintEnd_toEndOf="@+id/GenderSpinner1"
+            app:layout_constraintStart_toStartOf="@+id/imageView18"
+            app:layout_constraintTop_toBottomOf="@+id/GenderSpinner1" />
+
+        <TextView
+            android:id="@+id/Note"
+            android:layout_width="354dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Note:Once entered, you cannot change the Parent Email Id during the process of student registration."
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="14dp"
+            app:layout_constraintEnd_toEndOf="@+id/alternatephoneno"
+            app:layout_constraintStart_toStartOf="@+id/imageView30"
+            app:layout_constraintTop_toBottomOf="@+id/alternatephoneno" />
+
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
